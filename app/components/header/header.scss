@@ -4,6 +4,24 @@
     align-items: center;
 }
 
+.header__btn {
+    width: 30px;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header__btn-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, .5);
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
 .logo_header {
     max-width: 150px;
 }
@@ -24,6 +42,10 @@
     color: #000;
     text-transform: uppercase;
     text-decoration: none;
+
+    @include r(1000) {
+        font-size: 14px;
+    }
 }
 
 .header__item {
